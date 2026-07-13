@@ -1,7 +1,7 @@
 "use client";
 
 import { notFound } from "next/navigation";
-import { BackButton, Pill, StickerLink } from "@/components/ui";
+import { BackButton, ComingSoon, Pill, StickerLink } from "@/components/ui";
 import { subjects, unitGroupsBySubject, type SubjectKey } from "@/data/units";
 import { contentMap } from "@/data/content-map";
 
@@ -67,6 +67,8 @@ export function UnitSelect({
             </div>
           </div>
         ))}
+
+        <ComingSoon className="mt-2 min-h-[120px] border-[4px]" />
       </div>
     </main>
   );

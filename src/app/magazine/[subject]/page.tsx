@@ -5,11 +5,18 @@ import { BackButton, Pill, StickerLink } from "@/components/ui";
 import { articlesForSubject } from "@/data/magazine";
 import { subjects, type SubjectKey } from "@/data/units";
 
-export default function MagazineListPage({ params }: { params: Promise<{ subject: string }> }) {
+export default function MagazineListPage({
+  params,
+  searchParams,
+}: {
+  params: Promise<{ subject: string }>;
+  searchParams: Promise<{ q?: string }>;
+}) {
   const { subject: subjectKey } = use(params);
+  const { q: initialQuery = "" } = use(searchParams);
   const subject = subjects.find((s) => s.key === subjectKey);
-  const [queryDraft, setQueryDraft] = useState("");
-  const [query, setQuery] = useState("");
+  const [queryDraft, setQueryDraft] = useState(initialQuery);
+  const [query, setQuery] = useState(initialQuery);
 
   const all = articlesForSubject(subjectKey as SubjectKey);
   const results = useMemo(() => {

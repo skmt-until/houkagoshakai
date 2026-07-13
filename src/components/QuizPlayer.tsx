@@ -6,10 +6,22 @@ import { AnimatePresence, motion } from "framer-motion";
 import { BackButton, Pill, StickerButton } from "@/components/ui";
 import type { QuizQuestion } from "@/data/types";
 
-function shuffledIndices(n: number): number[] {
+/** Deterministic PRNG (mulberry32) so the shuffle is identical on server and client render, avoiding hydration mismatches. */
+function seededRandom(seed: number) {
+  let s = seed >>> 0;
+  return () => {
+    s = (s + 0x6d2b79f5) | 0;
+    let t = Math.imul(s ^ (s >>> 15), s | 1);
+    t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
+
+function shuffledIndices(n: number, seed: number): number[] {
+  const rand = seededRandom(seed);
   const arr = [...Array(n).keys()];
   for (let i = n - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
+    const j = Math.floor(rand() * (i + 1));
     [arr[i], arr[j]] = [arr[j], arr[i]];
   }
   return arr;
@@ -42,7 +54,10 @@ export function QuizPlayer({
   const origIndex = activeIndices[qi];
   const q = questions[origIndex];
 
-  const order = useMemo(() => shuffledIndices(q.choices.length), [origIndex, shuffleNonce]); // eslint-disable-line react-hooks/exhaustive-deps
+  const order = useMemo(
+    () => shuffledIndices(q.choices.length, origIndex * 1000 + shuffleNonce),
+    [origIndex, shuffleNonce, q.choices.length],
+  );
 
   const correct = picked !== null && picked === q.answer;
   const isLast = qi >= total - 1;
