@@ -126,7 +126,7 @@ export function StickerLink({
   style?: CSSProperties;
 }) {
   return (
-    <Link href={href} className="outline-none">
+    <Link href={href} className="contents outline-none">
       <motion.div
         whileHover={{ y: -3, scale: 1.02 }}
         whileTap={{ y: 3, scale: 0.98 }}
