@@ -50,7 +50,7 @@ export function UnitSelect({
               <span className="w-3.5 h-3.5 rounded-full bg-ink" />
               <span className="text-base font-black text-ink">{g.group}</span>
             </div>
-            <div className="flex flex-col gap-2.5">
+            <div className="grid grid-cols-2 gap-2.5">
               {g.items.map((it) => {
                 const content = contentMap[it.title];
                 const href = content ? `${basePath}/${subjectKey}/${content.slug}` : "#";
@@ -58,7 +58,7 @@ export function UnitSelect({
                   <StickerLink
                     key={it.title}
                     href={href}
-                    className="w-full bg-white border-4 border-ink rounded-[18px] px-4.5 py-3.5 flex flex-col items-start gap-0.5 text-left"
+                    className="w-full bg-white border-4 border-ink rounded-[18px] pl-7 pr-4.5 py-3.5 flex flex-col items-start gap-0.5 text-left"
                   >
                     <span className="text-[17px] font-black">{it.title}</span>
                   </StickerLink>
