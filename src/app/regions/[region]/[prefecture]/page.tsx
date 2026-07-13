@@ -17,7 +17,7 @@ export default async function PrefectureDetailPage({
       <div className="w-full max-w-[560px] flex flex-col gap-5">
         <div className="flex items-center gap-3">
           <BackButton href={`/regions/${regionParam}`}>もどる</BackButton>
-          <Pill className="rotate-[-1.5deg]">
+          <Pill>
             {region.emoji} {region.name}
           </Pill>
         </div>

@@ -32,7 +32,7 @@ export function SubjectSelect({
       <div className="w-full max-w-[680px] flex flex-col gap-5.5">
         <div className="flex items-center gap-3 flex-wrap">
           <BackButton href="/">トップに戻る</BackButton>
-          <Pill className="rotate-[-1.5deg]">
+          <Pill>
             {icon} {label}
           </Pill>
 

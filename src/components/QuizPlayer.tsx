@@ -111,9 +111,9 @@ export function QuizPlayer({
         <div className="flex items-center gap-3 flex-wrap">
           <BackButton href={homeHref}>もどる</BackButton>
           <BackButton href={backHref}>1つ前に戻る</BackButton>
-          <Pill tone="accent" className="rotate-[-1.5deg]">🎮 クイズ</Pill>
+          <Pill tone="accent">🎮 クイズ</Pill>
           <div className="flex-1" />
-          <Pill tone="outline" className="rotate-[1.5deg]">{region}</Pill>
+          <Pill tone="outline">{region}</Pill>
           <span className="text-[13px] font-black bg-mintline2 border-[3px] border-ink rounded-full px-3 py-1">
             {qFinished ? "結果" : `第${qi + 1}問 / ${total}`}
           </span>

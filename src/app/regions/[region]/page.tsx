@@ -12,7 +12,7 @@ export default async function PrefectureListPage({ params }: { params: Promise<{
       <div className="w-full max-w-[680px] flex flex-col gap-5.5">
         <div className="flex items-center gap-3">
           <BackButton href="/regions">地方一覧</BackButton>
-          <Pill className="rotate-[-1.5deg]">
+          <Pill>
             {region.emoji} {region.name}
           </Pill>
         </div>

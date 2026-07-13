@@ -79,13 +79,13 @@ export function SlidePlayer({
         <div className="flex items-center gap-3 flex-wrap">
           <BackButton href={homeHref}>もどる</BackButton>
           <BackButton href={backHref}>1つ前に戻る</BackButton>
-          <Pill className="rotate-[-1.5deg]">📖 知識確認スライド</Pill>
+          <Pill>📖 知識確認スライド</Pill>
           <div className="flex-1" />
-          <Pill tone="outline" className="rotate-[1.5deg]">{region}</Pill>
+          <Pill tone="outline">{region}</Pill>
         </div>
 
         <div className="relative w-full bg-white border-[5px] border-ink rounded-[26px] overflow-hidden">
-          <div className="absolute top-3.5 right-3.5 z-[3] text-xs font-black bg-accent text-cardsoft border-[3px] border-ink rounded-xl px-2.5 py-1 rotate-[4deg]">
+          <div className="absolute top-3.5 right-3.5 z-[3] text-xs font-black bg-accent text-cardsoft border-[3px] border-ink rounded-xl px-2.5 py-1">
             No.{i + 1}
           </div>
 

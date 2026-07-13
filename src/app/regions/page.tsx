@@ -9,7 +9,7 @@ export default function RegionsPage() {
       <div className="w-full max-w-[680px] flex flex-col gap-5.5">
         <div className="flex items-center gap-3">
           <BackButton href="/">トップに戻る</BackButton>
-          <Pill className="rotate-[-1.5deg]">🗾 ４７都道府県をカクニン！</Pill>
+          <Pill>🗾 ４７都道府県をカクニン！</Pill>
         </div>
 
         <div className="flex flex-col gap-1 pt-1">

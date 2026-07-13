@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { BackButton, Card, ComingSoon, Pill } from "@/components/ui";
 
 export const metadata = { title: "保護者の方へ｜ホーカゴシャカイ" };
@@ -132,10 +131,7 @@ export default function ParentPage() {
 
           <aside className="flex-[1_1_200px] min-w-[190px] flex flex-col gap-4.5">
             <Card className="px-4.5 py-4.5 flex flex-col gap-3">
-              <Link href="/parent/materials" className="text-[14.5px] font-black text-ink underline">
-                📚 おすすめ教材ガイドを見る ›
-              </Link>
-              <ComingSoon className="min-h-[160px]" />
+              <ComingSoon className="min-h-[180px]" />
             </Card>
             <ComingSoon className="flex-1 min-h-[220px] border-[4px]" />
           </aside>
