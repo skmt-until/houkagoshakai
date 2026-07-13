@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+  }
+}
+
+.hs-dot-bg {
+  background-color: #eff6f0;
+  background-image: radial-gradient(#1a433118 1.4px, transparent 1.4px);
+  background-size: 22px 22px;
+}
+
+.hs-hero-bg {
+  background-color: #eaf4ec;
+  background-image:
+    repeating-linear-gradient(45deg, rgba(26, 67, 49, 0.07) 0 16px, transparent 16px 32px),
+    radial-gradient(rgba(26, 67, 49, 0.16) 2px, transparent 2px);
+  background-size: auto, 26px 26px;
+}
+
+.hs-hero-a {
+  display: inline-block;
+  animation: hs-drop 0.8s 0.14s cubic-bezier(0.33, 0.7, 0.4, 1) backwards;
+}
+.hs-hero-b {
+  display: inline-block;
+  animation: hs-drop 0.8s 0.28s cubic-bezier(0.33, 0.7, 0.4, 1) backwards;
+}
+
+.hs-paper-swatch {
+  background-color: #fbfdfb;
+  background-image: repeating-linear-gradient(45deg, #1a433112 0 6px, transparent 6px 12px);
+}
