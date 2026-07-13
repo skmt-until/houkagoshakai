@@ -68,10 +68,10 @@ export function SubjectSelect({
             <StickerLink
               key={sj.key}
               href={`${basePath}/${sj.key}`}
-              className="flex-1 min-w-[150px] border-[5px] border-ink rounded-[22px] px-4.5 py-6.5 flex flex-col items-center gap-2"
+              className="flex-1 min-w-[150px] border-[5px] border-ink rounded-[22px] px-6 py-10 flex flex-col items-center gap-4"
               style={{ background: sj.bg }}
             >
-              <span className="text-[48px] leading-none w-[78px] h-[78px] flex items-center justify-center bg-white border-4 border-ink rounded-full">
+              <span className="text-[56px] leading-none w-[96px] h-[96px] flex items-center justify-center bg-white border-4 border-ink rounded-full">
                 {sj.emoji}
               </span>
               <span className="text-2xl font-black">{sj.name}</span>
