@@ -29,7 +29,7 @@ export function SubjectSelect({
 
   return (
     <main className="hs-dot-bg min-h-screen flex flex-col items-center px-5 py-7 sm:px-9 text-ink">
-      <div className="w-full max-w-[1040px] flex flex-col gap-5.5">
+      <div className="w-full max-w-[1040px] flex flex-col gap-8">
         <div className="flex items-center gap-3 flex-wrap">
           <BackButton href="/">トップに戻る</BackButton>
           <Pill>
@@ -58,7 +58,7 @@ export function SubjectSelect({
           )}
         </div>
 
-        <div className="flex flex-col gap-1 pt-1">
+        <div className="flex flex-col gap-2 pt-1">
           <h2 className="m-0 text-[30px] font-black text-ink">分野をえらぼう！</h2>
           <div className="text-sm font-bold text-ink opacity-70">どの分野で学習する？</div>
         </div>
