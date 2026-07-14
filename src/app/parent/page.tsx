@@ -129,11 +129,8 @@ export default function ParentPage() {
             ))}
           </div>
 
-          <aside className="flex-[1_1_200px] min-w-[190px] flex flex-col gap-4.5">
-            <Card className="px-4.5 py-4.5 flex flex-col gap-3">
-              <ComingSoon className="min-h-[180px]" />
-            </Card>
-            <ComingSoon className="flex-1 min-h-[220px] border-[4px]" />
+          <aside className="flex-[1_1_200px] min-w-[190px] flex flex-col">
+            <ComingSoon className="flex-1 min-h-[420px] border-[4px]" />
           </aside>
         </div>
       </div>
