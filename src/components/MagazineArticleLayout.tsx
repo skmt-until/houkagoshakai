@@ -21,7 +21,7 @@ export function ArticleShell({
           <Pill>📰 {volLabel}</Pill>
         </div>
 
-        <div className="flex gap-5.5 items-start flex-wrap">
+        <div className="flex gap-9 items-start flex-wrap">
           <article className="bg-white border-[5px] border-ink rounded-3xl px-10 py-11 flex flex-col gap-7 flex-[1_1_740px] min-w-0">
             {children}
           </article>
