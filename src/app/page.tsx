@@ -26,7 +26,7 @@ export default function HomePage() {
           ❓ ホーカゴシャカイとは？
         </button>
 
-        <div className="text-[clamp(13px,3.4vw,17px)] font-bold tracking-wide bg-ink text-cardsoft px-4.5 py-1.5 rounded-full whitespace-nowrap animate-hs-drop">
+        <div className="text-[clamp(13px,3.4vw,17px)] font-bold tracking-wide bg-ink text-cardsoft px-4.5 py-1.5 rounded-full whitespace-nowrap animate-hs-drop mt-7 sm:mt-0">
           &nbsp;ホーカゴ、サクッと社会科を勉強するサイト！
         </div>
 
@@ -59,10 +59,10 @@ export default function HomePage() {
               >
                 {f.icon}
               </span>
-              <span className="flex flex-col items-start gap-0.5 flex-1 text-left">
-                <span className="text-[22px] font-black whitespace-nowrap">{f.title}</span>
+              <span className="flex flex-col items-start gap-0.5 flex-1 text-left min-w-0">
+                <span className="text-[22px] font-black">{f.title}</span>
               </span>
-              <span className="text-sm font-medium opacity-70 text-[#02110a] whitespace-nowrap">～{f.sub}～</span>
+              <span className="hidden sm:block text-sm font-medium opacity-70 text-[#02110a] whitespace-nowrap flex-none">～{f.sub}～</span>
             </StickerLink>
           ))}
 
@@ -74,10 +74,10 @@ export default function HomePage() {
             <span className="text-[36px] leading-none w-[60px] h-[60px] flex items-center justify-center bg-cardsoft border-[3px] border-ink rounded-2xl flex-none">
               🗾
             </span>
-            <span className="flex flex-col items-start gap-0.5 flex-1 text-left">
-              <span className="text-[22px] font-black whitespace-nowrap">４７都道府県をカクニン！</span>
+            <span className="flex flex-col items-start gap-0.5 flex-1 text-left min-w-0">
+              <span className="text-[22px] font-black">４７都道府県をカクニン！</span>
             </span>
-            <span className="text-sm font-medium opacity-70 text-[#02110a] whitespace-nowrap">～日本の多様さを知ろう～</span>
+            <span className="hidden sm:block text-sm font-medium opacity-70 text-[#02110a] whitespace-nowrap flex-none">～日本の多様さを知ろう～</span>
           </StickerLink>
 
           <StickerLink
