@@ -131,7 +131,7 @@ export function QuizPlayer({
                 <StickerButton
                   key={pos}
                   onClick={() => pick(origIdx)}
-                  className="w-full bg-white border-4 border-ink rounded-[20px] px-5 py-4.5 flex items-center gap-4 text-left"
+                  className="w-full bg-white border-4 border-ink rounded-[20px] px-5 py-7 flex items-center gap-4 text-left"
                 >
                   <span className="w-11 h-11 flex-none flex items-center justify-center bg-cardsoft border-[3px] border-ink rounded-[13px] font-black text-[19px]">
                     {"ABCD"[pos] ?? "?"}
