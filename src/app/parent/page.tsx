@@ -60,7 +60,7 @@ export default function ParentPage() {
             </Card>
 
             {TIPS.map((tip) => (
-              <Card key={tip.n} className="px-5.5 py-5.5 flex flex-col gap-3.5">
+              <Card key={tip.n} className="px-8 py-8 flex flex-col gap-3.5">
                 <div className="flex items-center gap-3">
                   <span className="w-[46px] h-[46px] flex-none flex items-center justify-center bg-accent text-white border-[3px] border-ink rounded-2xl text-[22px] font-black">
                     {tip.n}
