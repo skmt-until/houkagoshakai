@@ -1,6 +1,6 @@
 import {
   ArticleShell, ArticleHeader, ArticleP, ArticleSection,
-  InfoBox, DarkBox, Callout, SummaryBox, BackToMagazine, RelatedBook,
+  InfoBox, DarkBox, Callout, SummaryBox, BackToMagazine,
 } from "@/components/MagazineArticleLayout";
 import { ComingSoon } from "@/components/ui";
 
@@ -104,15 +104,5 @@ export function LastHumans() {
 }
 
 function LastHumansSidebar() {
-  return (
-    <>
-      <RelatedBook
-        emoji="🧬"
-        title="ネアンデルタール人と私たち"
-        subtitle="消えた人類の最新科学"
-        amazonUrl="https://www.amazon.co.jp/s?k=%E3%83%8D%E3%82%A2%E3%83%B3%E3%83%87%E3%83%AB%E3%82%BF%E3%83%BC%E3%83%AB%E4%BA%BA%20%E4%BA%BA%E9%A1%9E%E9%80%B2%E5%8C%96%20%E6%9C%AC"
-      />
-      <ComingSoon className="min-h-[200px] border-[4px]" />
-    </>
-  );
+  return <ComingSoon className="flex-1 min-h-[420px] border-[4px]" />;
 }

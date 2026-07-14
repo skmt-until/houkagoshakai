@@ -1,6 +1,6 @@
 import {
   ArticleShell, ArticleHeader, ArticleP, ArticleSection,
-  InfoBox, Callout, SummaryBox, BackToMagazine, RelatedBook,
+  InfoBox, Callout, SummaryBox, BackToMagazine,
 } from "@/components/MagazineArticleLayout";
 import { ComingSoon } from "@/components/ui";
 
@@ -102,15 +102,5 @@ export function AllowanceInflation() {
 }
 
 function AllowanceInflationSidebar() {
-  return (
-    <>
-      <RelatedBook
-        emoji="💰"
-        title="まんがでわかる 経済のしくみ"
-        subtitle="需要と供給、インフレをやさしく"
-        amazonUrl="https://www.amazon.co.jp/s?k=%E7%B5%8C%E6%B8%88%E3%81%AE%E3%81%97%E3%81%8F%E3%81%BF%20%E3%81%BE%E3%82%93%E3%81%8C%20%E5%AD%90%E4%BE%9B"
-      />
-      <ComingSoon className="min-h-[200px] border-[4px]" />
-    </>
-  );
+  return <ComingSoon className="flex-1 min-h-[420px] border-[4px]" />;
 }

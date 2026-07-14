@@ -1,7 +1,7 @@
 import Image from "next/image";
 import {
   ArticleShell, ArticleHeader, LeadBox, ArticleP, ArticleSection,
-  InfoBox, ComparisonRow, Callout, SummaryBox, BackToMagazine, RelatedBook,
+  InfoBox, ComparisonRow, Callout, SummaryBox, BackToMagazine,
 } from "@/components/MagazineArticleLayout";
 import { ComingSoon } from "@/components/ui";
 
@@ -96,15 +96,5 @@ export function Seasons() {
 }
 
 function SeasonsSidebar() {
-  return (
-    <>
-      <RelatedBook
-        emoji="🌍"
-        title="図解 世界の気候と暮らし"
-        subtitle="四季と気候帯をやさしく解説"
-        amazonUrl="https://www.amazon.co.jp/s?k=%E4%B8%96%E7%95%8C%E3%81%AE%E6%B0%97%E5%80%99%E3%81%A8%E6%9A%AE%E3%82%89%E3%81%97%20%E5%9B%B3%E9%91%91"
-      />
-      <ComingSoon className="min-h-[200px] border-[4px]" />
-    </>
-  );
+  return <ComingSoon className="flex-1 min-h-[420px] border-[4px]" />;
 }

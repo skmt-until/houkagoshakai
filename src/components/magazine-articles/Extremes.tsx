@@ -1,7 +1,7 @@
 import Image from "next/image";
 import {
   ArticleShell, ArticleHeader, LeadBox, ArticleP, ArticleSection,
-  InfoBox, Callout, SummaryBox, BackToMagazine, RelatedBook,
+  InfoBox, Callout, SummaryBox, BackToMagazine,
 } from "@/components/MagazineArticleLayout";
 import { ComingSoon } from "@/components/ui";
 
@@ -71,15 +71,5 @@ export function Extremes() {
 }
 
 function ExtremesSidebar() {
-  return (
-    <>
-      <RelatedBook
-        emoji="🌡️"
-        title="世界の気温 記録図鑑"
-        subtitle="暑い場所・寒い場所を写真でめぐる"
-        amazonUrl="https://www.amazon.co.jp/s?k=%E4%B8%96%E7%95%8C%E3%81%AE%E6%B0%97%E6%B8%A9%20%E8%A8%98%E9%8C%B2%20%E5%9B%B3%E9%91%91"
-      />
-      <ComingSoon className="min-h-[200px] border-[4px]" />
-    </>
-  );
+  return <ComingSoon className="flex-1 min-h-[420px] border-[4px]" />;
 }

@@ -1,6 +1,6 @@
 import {
   ArticleShell, ArticleHeader, LeadBox, ArticleP, ArticleSection,
-  InfoBox, Callout, SummaryBox, BackToMagazine, RelatedBook,
+  InfoBox, Callout, SummaryBox, BackToMagazine,
 } from "@/components/MagazineArticleLayout";
 import { ComingSoon } from "@/components/ui";
 
@@ -63,15 +63,5 @@ export function FireLanguageTools() {
 }
 
 function FireLanguageToolsSidebar() {
-  return (
-    <>
-      <RelatedBook
-        emoji="🔥"
-        title="人類の進化 大図鑑"
-        subtitle="火・言葉・道具の発見をたどる"
-        amazonUrl="https://www.amazon.co.jp/s?k=%E4%BA%BA%E9%A1%9E%E3%81%AE%E9%80%B2%E5%8C%96%20%E5%9B%B3%E9%91%91%20%E5%AD%90%E4%BE%9B"
-      />
-      <ComingSoon className="min-h-[200px] border-[4px]" />
-    </>
-  );
+  return <ComingSoon className="flex-1 min-h-[420px] border-[4px]" />;
 }
