@@ -22,7 +22,7 @@ export function ArticleShell({
         </div>
 
         <div className="flex gap-5.5 items-start flex-wrap">
-          <article className="bg-white border-[5px] border-ink rounded-3xl px-6.5 py-7 flex flex-col gap-7 flex-[1_1_740px] min-w-0">
+          <article className="bg-white border-[5px] border-ink rounded-3xl px-10 py-11 flex flex-col gap-7 flex-[1_1_740px] min-w-0">
             {children}
           </article>
           <aside className="flex-[0_0_260px] min-w-[230px] flex flex-col gap-3.5">{sidebar}</aside>
