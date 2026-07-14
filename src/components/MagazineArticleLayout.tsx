@@ -14,7 +14,7 @@ export function ArticleShell({
 }) {
   return (
     <main className="hs-dot-bg min-h-screen flex flex-col items-center px-5 py-7 sm:px-9 text-ink">
-      <div className="w-full max-w-[1180px] self-center flex flex-col gap-4.5">
+      <div className="w-full max-w-[1180px] self-center flex flex-col gap-7">
         <div className="flex items-center gap-3 flex-wrap">
           <BackButton href="/">トップに戻る</BackButton>
           <BackButton href={backHref}>1つ前に戻る</BackButton>
