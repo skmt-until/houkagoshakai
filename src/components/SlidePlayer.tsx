@@ -75,7 +75,7 @@ export function SlidePlayer({
 
   return (
     <main className="hs-dot-bg min-h-screen flex flex-col items-center px-5 py-7 sm:px-9 text-ink">
-      <div className="w-full max-w-[820px] flex flex-col gap-5">
+      <div className="w-full max-w-[980px] flex flex-col gap-5">
         <div className="flex items-center gap-3 flex-wrap">
           <BackButton href={homeHref}>もどる</BackButton>
           <BackButton href={backHref}>1つ前に戻る</BackButton>
