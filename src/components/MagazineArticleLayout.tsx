@@ -22,7 +22,7 @@ export function ArticleShell({
         </div>
 
         <div className="flex gap-5.5 items-start flex-wrap">
-          <article className="bg-white border-[5px] border-ink rounded-3xl px-6.5 py-7 flex flex-col gap-4.5 flex-[1_1_740px] min-w-0">
+          <article className="bg-white border-[5px] border-ink rounded-3xl px-6.5 py-7 flex flex-col gap-7 flex-[1_1_740px] min-w-0">
             {children}
           </article>
           <aside className="flex-[0_0_260px] min-w-[230px] flex flex-col gap-3.5">{sidebar}</aside>
@@ -60,7 +60,7 @@ export function ArticleHeader({
 
 export function LeadBox({ kicker, children }: { kicker: string; children: ReactNode }) {
   return (
-    <div className="bg-mintline2 border-[3px] border-ink rounded-2xl p-4.5 flex flex-col gap-2">
+    <div className="bg-mintline2 border-[3px] border-ink rounded-2xl p-6 flex flex-col gap-3">
       <div className="text-xs font-black tracking-wide text-accent">{kicker}</div>
       <div className="text-[18px] font-black leading-snug text-ink text-balance">{children}</div>
     </div>
@@ -73,8 +73,8 @@ export function ArticleP({ children }: { children: ReactNode }) {
 
 export function ArticleSection({ icon, heading, children }: { icon: string; heading: string; children: ReactNode }) {
   return (
-    <section className="flex flex-col gap-3">
-      <div className="flex items-start gap-3">
+    <section className="flex flex-col gap-4">
+      <div className="flex items-start gap-4">
         <span className="text-[25px] leading-none w-[50px] h-[50px] flex-none flex items-center justify-center bg-accent border-[3px] border-ink rounded-2xl">
           {icon}
         </span>
@@ -87,7 +87,7 @@ export function ArticleSection({ icon, heading, children }: { icon: string; head
 
 export function InfoBox({ head, children, dense }: { head: string; children?: ReactNode; dense?: boolean }) {
   return (
-    <div className={`flex flex-col ${dense ? "gap-1.5" : "gap-2"} bg-mint border-[3px] border-ink rounded-2xl px-3.5 py-3.5`}>
+    <div className={`flex flex-col ${dense ? "gap-2" : "gap-2.5"} bg-mint border-[3px] border-ink rounded-2xl px-5 py-4.5`}>
       <div className="text-[14.5px] font-black text-ink">{head}</div>
       {children && <div className="text-sm font-medium leading-[1.8] text-ink/90">{children}</div>}
     </div>
@@ -112,7 +112,7 @@ export function Callout({ children }: { children: ReactNode }) {
 
 export function DarkBox({ head, children }: { head: string; children: ReactNode }) {
   return (
-    <div className="flex flex-col gap-1.5 bg-ink border-[3px] rounded-2xl px-3.5 py-3.5" style={{ borderColor: "#12301F" }}>
+    <div className="flex flex-col gap-2 bg-ink border-[3px] rounded-2xl px-5 py-4.5" style={{ borderColor: "#12301F" }}>
       <div className="text-[14.5px] font-black text-cardsoft">{head}</div>
       <div className="text-sm font-medium leading-[1.8] text-cardsoft/90">{children}</div>
     </div>
@@ -121,7 +121,7 @@ export function DarkBox({ head, children }: { head: string; children: ReactNode 
 
 export function SummaryBox({ label, children }: { label: string; children: ReactNode }) {
   return (
-    <div className="bg-ink text-cardsoft border-4 rounded-2xl px-4.5 py-4.5 flex flex-col gap-2" style={{ borderColor: "#12301F" }}>
+    <div className="bg-ink text-cardsoft border-4 rounded-2xl px-6 py-5 flex flex-col gap-2.5" style={{ borderColor: "#12301F" }}>
       <span className="text-xs font-black tracking-wide bg-accent text-cardsoft self-start px-2.5 py-0.5 rounded-full">{label}</span>
       <div className="text-[15px] font-bold leading-[1.85]">{children}</div>
     </div>
