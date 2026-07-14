@@ -120,18 +120,18 @@ export function QuizPlayer({
         </div>
 
         {!qFinished && (
-          <div className="flex flex-col gap-4 max-w-[820px] mx-auto w-full">
-            <div className="bg-white border-[5px] border-ink rounded-[26px] px-7 py-6 flex flex-col gap-3">
+          <div className="flex flex-col gap-5 max-w-[820px] mx-auto w-full">
+            <div className="bg-white border-[5px] border-ink rounded-[26px] px-8 py-7 flex flex-col gap-3.5">
               <div className="text-sm font-bold tracking-wide text-accent">QUESTION</div>
               <h2 className="m-0 text-[28px] font-black leading-[1.45] text-ink text-balance">{q.q}</h2>
             </div>
 
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-col gap-3.5">
               {order.map((origIdx, pos) => (
                 <StickerButton
                   key={pos}
                   onClick={() => pick(origIdx)}
-                  className="w-full bg-white border-4 border-ink rounded-[20px] px-5 py-4.5 flex items-center gap-4 text-left"
+                  className="w-full bg-white border-4 border-ink rounded-[20px] px-5 py-6 flex items-center gap-4 text-left"
                 >
                   <span className="w-11 h-11 flex-none flex items-center justify-center bg-cardsoft border-[3px] border-ink rounded-[13px] font-black text-[19px]">
                     {"ABCD"[pos] ?? "?"}
