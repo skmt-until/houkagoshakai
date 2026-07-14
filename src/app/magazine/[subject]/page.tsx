@@ -27,7 +27,7 @@ export default function MagazineListPage({
 
   return (
     <main className="hs-dot-bg min-h-screen flex flex-col items-center px-5 py-7 sm:px-9 text-ink">
-      <div className="w-full max-w-[560px] self-center flex flex-col gap-8">
+      <div className="w-full max-w-[1040px] self-center flex flex-col gap-8">
         <div className="flex items-center gap-3 flex-wrap">
           <BackButton href="/">トップに戻る</BackButton>
           <BackButton href="/magazine">1つ前に戻る</BackButton>
@@ -61,12 +61,12 @@ export default function MagazineListPage({
           </div>
         )}
 
-        <div className="flex gap-4.5 flex-wrap justify-start">
+        <div className="flex gap-7 flex-wrap justify-start">
           {results.map((a) => (
             <StickerLink
               key={a.id}
               href={`/magazine/${subjectKey}/${a.slug}`}
-              className="w-[248px] h-[248px] bg-white border-4 border-ink rounded-[22px] p-5.5 flex flex-col gap-3.5 text-left"
+              className="w-[268px] h-[268px] bg-white border-4 border-ink rounded-[22px] p-6 flex flex-col gap-4 text-left"
             >
               <span className="text-[40px] leading-none w-[70px] h-[70px] flex-none flex items-center justify-center bg-mintline2 border-[3px] border-ink rounded-2xl">
                 {a.emoji}
