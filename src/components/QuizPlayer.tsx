@@ -144,7 +144,7 @@ export function QuizPlayer({
         )}
 
         {qFinished && (
-          <div className="bg-white border-[6px] border-ink rounded-[28px] px-7 py-8.5 flex flex-col items-center gap-3 max-w-[680px] mx-auto w-full">
+          <div className="bg-white border-[6px] border-ink rounded-[28px] px-10 py-12 flex flex-col items-center gap-3 max-w-[680px] mx-auto w-full">
             <div className="text-[64px] leading-none">{passEmoji}</div>
             <div className="text-[28px] font-black text-ink">{passTitle}</div>
             <div className="text-lg font-black text-cardsoft bg-ink rounded-full px-5.5 py-2">
