@@ -107,7 +107,7 @@ export function QuizPlayer({
 
   return (
     <main className="hs-dot-bg min-h-screen flex flex-col items-center px-5 py-7 sm:px-9 text-ink">
-      <div className="w-full max-w-[680px] flex flex-col gap-5.5">
+      <div className="w-full max-w-[980px] flex flex-col gap-7">
         <div className="flex items-center gap-3 flex-wrap">
           <BackButton href={homeHref}>もどる</BackButton>
           <BackButton href={backHref}>1つ前に戻る</BackButton>
@@ -120,13 +120,13 @@ export function QuizPlayer({
         </div>
 
         {!qFinished && (
-          <div className="flex flex-col gap-4.5">
-            <div className="bg-white border-[5px] border-ink rounded-[26px] px-7 py-7.5 flex flex-col gap-3">
+          <div className="flex flex-col gap-6 max-w-[820px] mx-auto w-full">
+            <div className="bg-white border-[5px] border-ink rounded-[26px] px-9 py-9 flex flex-col gap-4">
               <div className="text-sm font-bold tracking-wide text-accent">QUESTION</div>
               <h2 className="m-0 text-[28px] font-black leading-[1.45] text-ink text-balance">{q.q}</h2>
             </div>
 
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-col gap-4">
               {order.map((origIdx, pos) => (
                 <StickerButton
                   key={pos}
@@ -144,7 +144,7 @@ export function QuizPlayer({
         )}
 
         {qFinished && (
-          <div className="bg-white border-[6px] border-ink rounded-[28px] px-7 py-8.5 flex flex-col items-center gap-3">
+          <div className="bg-white border-[6px] border-ink rounded-[28px] px-7 py-8.5 flex flex-col items-center gap-3 max-w-[680px] mx-auto w-full">
             <div className="text-[64px] leading-none">{passEmoji}</div>
             <div className="text-[28px] font-black text-ink">{passTitle}</div>
             <div className="text-lg font-black text-cardsoft bg-ink rounded-full px-5.5 py-2">
