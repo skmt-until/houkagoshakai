@@ -97,7 +97,7 @@ export function SlidePlayer({
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.32, ease: [0.22, 1, 0.36, 1] }}
-              className={`relative flex flex-col gap-3.5 ${
+              className={`relative flex flex-col gap-3.5 max-w-[810px] mx-auto ${
                 isCover ? "items-center justify-center text-center px-11 py-13 min-h-[380px]" : "items-stretch text-left px-8.5 py-8 pb-9"
               }`}
             >
